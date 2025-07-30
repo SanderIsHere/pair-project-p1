@@ -1,0 +1,27 @@
+[
+  {
+    "email": "sanAtHactiv@gmail.com ",
+    "password": "akuc1ntaHactiv",
+    "role": "seller"
+  },
+  {
+    "email": "ipanGantenk@egmail.com",
+    "password": "hashedadminpassword",
+    "role": "buyer"
+  },
+  {
+    "email": "tipencoww@egmail.com",
+    "password": "hashededitorpassword",
+    "role": "buyer"
+  },
+  {
+    "email": "tempelsanas1n1@egmail.com",
+    "password": "hashedpassword2",
+    "role": "seller"
+  },
+  {
+    "email": "ciumanAsmara2@egmail.com",
+    "password": "hashedguestpassword",
+    "role": "buyer"
+  }
+]

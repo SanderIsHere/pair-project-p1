@@ -1,0 +1,22 @@
+[
+  {
+    "UserId": 1,
+    "purchasedDate": "2024-07-28"
+  },
+  {
+    "UserId": 2,
+    "purchasedDate": "2024-07-29"
+  },
+  {
+    "UserId": 3,
+    "purchasedDate": "2025-07-30"
+  },
+  {
+    "UserId": 4,
+    "purchasedDate": "2025-07-27"
+  },
+  {
+    "UserId": 5,
+    "purchasedDate": "2025-06-26"
+  }
+]

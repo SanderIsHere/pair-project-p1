@@ -1,0 +1,17 @@
+1. User
+npx sequelize model:generate --name User --attributes email:string,password:string,role:string
+
+2. Profile
+npx sequelize model:generate --name Profile --attributes firstName:string,lastName:string,bornDate:date,UserId:integer
+
+3. Product
+npx sequelize model:generate --name Product --attributes productName:string,productImage:string,CategoryId:integer,UserId:integer
+
+4. Categories
+npx sequelize model:generate --name Category --attributes categoryName:string
+
+5. Purchase
+npx sequelize model:generate --name Purchase --attributes UserId:integer,purchasedDate:date
+
+6. Purchases_Products
+npx sequelize model:generate --name Purchase_Product --attributes PurchaseId:integer,ProductId:integer 

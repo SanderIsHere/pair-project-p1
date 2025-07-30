@@ -1,0 +1,32 @@
+[
+  {
+    "productName": "Sepatu Lari UltraBoost",
+    "productImage": "https://example.com/images/ultraboost.jpg",
+    "CategoryId": 201,
+    "UserId": 1
+  },
+  {
+    "productName": "Raket Badminton Yonex",
+    "productImage": "https://example.com/images/yonexraket.jpg",
+    "CategoryId": 202,
+    "UserId": 2
+  },
+  {
+    "productName": "Bola Basket Spalding NBA",
+    "productImage": "https://example.com/images/spaldingnba.jpg",
+    "CategoryId": 203,
+    "UserId": 3
+  },
+  {
+    "productName": "Jersey Sepak Bola Timnas",
+    "productImage": "https://example.com/images/jerseytimnas.jpg",
+    "CategoryId": 204,
+    "UserId": 4
+  },
+  {
+    "productName": "Matras Yoga Anti-slip",
+    "productImage": "https://example.com/images/yogamat.jpg",
+    "CategoryId": 205,
+    "UserId": 5
+  }
+]

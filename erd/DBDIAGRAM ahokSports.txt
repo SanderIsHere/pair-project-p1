@@ -1,0 +1,50 @@
+DBDIAGRAM ahokSports
+
+table Users{
+  id serial [primary key]
+  email varchar
+  password varchar
+  role varchar
+}
+
+table Profiles{
+  id serial [primary key]
+  firstName varchar
+  lastName varchar
+  bornDate date
+  UserId integer
+}
+table Categories{
+  id serial [primary key]
+  categoryName varchar
+}
+
+table Products{
+  id serial [primary key]
+  productName varchar
+  productImage varchar
+  CategoryId integer
+  UserId integer
+}
+table Purchases{
+  id serial [primary key]
+  UserId integer
+  // ProductId integer
+  purchasedDate date
+}
+
+table Purchases_Products{
+  PurchaseId integer
+  ProductId integer
+}
+
+ref: Users.id < Purchases.UserId
+Ref: "Products"."CategoryId" <> "Categories"."id"
+
+Ref: "Users"."id" - "Profiles"."UserId"
+
+Ref: "Purchases"."id" <> "Purchases_Products"."PurchaseId"
+
+Ref: "Purchases_Products"."ProductId" <> "Products"."id"
+
+Ref: "Users"."id" < "Products"."UserId"
