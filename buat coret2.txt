@@ -15,3 +15,24 @@ npx sequelize model:generate --name Purchase --attributes UserId:integer,purchas
 
 6. Purchases_Products
 npx sequelize model:generate --name Purchase_Product --attributes PurchaseId:integer,ProductId:integer 
+
+
+utk bcrypt
+
+1. buat model generate table User
+2. npm i bcrypt.js
+
+
+app.use('/user/:id', (req, res, next) => {
+  console.log('Request Type:', req.method)
+  next()
+})
+ ------> middleware diatas dipasang di antara router '/logIn' dan '/landingPage'
+
+ <select name="role" id="role">
+           <option value="" selected disabled>Choose role</option>
+            <% role.forEach(el => { %>
+            <option value="<%= el %>"><%= el %></option>
+            <% }) %>
+            </select>
+            <br> <br>
