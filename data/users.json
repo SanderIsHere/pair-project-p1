@@ -5,22 +5,22 @@
     "role": "seller"
   },
   {
-    "email": "ipanGantenk@egmail.com",
+    "email": "ipanGantenk@gmail.com",
     "password": "hashedadminpassword",
     "role": "buyer"
   },
   {
-    "email": "tipencoww@egmail.com",
+    "email": "tipencoww@gmail.com",
     "password": "hashededitorpassword",
     "role": "buyer"
   },
   {
-    "email": "tempelsanas1n1@egmail.com",
+    "email": "tempelsanas1n1@gmail.com",
     "password": "hashedpassword2",
     "role": "seller"
   },
   {
-    "email": "ciumanAsmara2@egmail.com",
+    "email": "ciumanAsmara2@gmail.com",
     "password": "hashedguestpassword",
     "role": "buyer"
   }

@@ -1,32 +1,42 @@
 [
   {
     "productName": "Sepatu Lari UltraBoost",
-    "productImage": "https://example.com/images/ultraboost.jpg",
-    "CategoryId": 201,
+    "productImage": "https://www.adidas.co.id/media/catalog/product/i/f/if1732_2_footwear_photography_side20lateral20view_grey.jpg",
+    "price": 1000000,
+    "CategoryId": 2,
+    "stock": 10,
     "UserId": 1
   },
   {
     "productName": "Raket Badminton Yonex",
-    "productImage": "https://example.com/images/yonexraket.jpg",
-    "CategoryId": 202,
+    "productImage": "https://www.sportscenter.co.id/assets/Uploads/4711.jpg",
+    "price": 3300000,
+    "CategoryId": 1,
+    "stock": 13,
     "UserId": 2
   },
   {
     "productName": "Bola Basket Spalding NBA",
-    "productImage": "https://example.com/images/spaldingnba.jpg",
-    "CategoryId": 203,
+    "productImage": "https://cdn1-production-images-kly.akamaized.net/y2lTRiLxiWTEJ7Wg0ekA7l9Y3g4=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3390086/original/049611400_1614609120-Spalding.jpg",
+    "price": 350000,
+    "CategoryId": 1,
+    "stock": 21,
     "UserId": 3
   },
   {
     "productName": "Jersey Sepak Bola Timnas",
-    "productImage": "https://example.com/images/jerseytimnas.jpg",
-    "CategoryId": 204,
+    "productImage": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/96/MTA-172275711/erspo_erspo-timnas-jersey-player-issue-home-red_full08.jpg",
+    "price": 100000,
+    "CategoryId": 2,
+    "stock": 2,
     "UserId": 4
   },
   {
     "productName": "Matras Yoga Anti-slip",
-    "productImage": "https://example.com/images/yogamat.jpg",
-    "CategoryId": 205,
+    "productImage": "https://speedsindo.com/wp-content/uploads/2022/03/LX-027-5-Matras-Lipat_01.jpg",
+    "price": 500000,
+    "CategoryId": 3,
+    "stock": 12,
     "UserId": 5
   }
 ]

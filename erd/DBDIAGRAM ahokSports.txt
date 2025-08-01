@@ -23,6 +23,8 @@ table Products{
   id serial [primary key]
   productName varchar
   productImage varchar
+  stock integer
+  price integer
   CategoryId integer
   UserId integer
 }
@@ -43,8 +45,8 @@ Ref: "Products"."CategoryId" <> "Categories"."id"
 
 Ref: "Users"."id" - "Profiles"."UserId"
 
-Ref: "Purchases"."id" <> "Purchases_Products"."PurchaseId"
+Ref: "Purchases"."id" < "Purchases_Products"."PurchaseId"
 
-Ref: "Purchases_Products"."ProductId" <> "Products"."id"
+Ref: "Purchases_Products"."ProductId" > "Products"."id"
 
 Ref: "Users"."id" < "Products"."UserId"
