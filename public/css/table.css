@@ -1,0 +1,96 @@
+/* Styling dasar untuk body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Styling Tabel --- */
+.product-table {
+  width: 100%; /* Tabel mengisi lebar kontainer */
+  border-collapse: collapse; /* Menghilangkan spasi antar border sel */
+  border-radius: 8px; /* Sudut membulat */
+  overflow: hidden; /* Penting untuk membuat border-radius berfungsi pada tabel */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Styling Header Tabel */
+.product-table thead tr {
+  background-color: #007bff; /* Warna latar belakang header biru */
+  color: white;
+  text-align: left; /* Teks rata kiri */
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 15px; /* Padding di dalam sel */
+  border: 1px solid #e0e0e0; /* Garis pemisah antar sel */
+}
+
+/* Styling Baris Data */
+.product-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.product-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3; /* Warna latar belakang selang-seling */
+}
+
+.product-table tbody tr:hover {
+  background-color: #f1f8ff; /* Warna saat baris di-hover */
+  cursor: pointer;
+}
+
+/* --- Styling Gambar Produk --- */
+.product-image {
+  width: 80px; /* Ukuran gambar yang konsisten */
+  height: 80px;
+  object-fit: cover; /* Menjaga rasio aspek gambar */
+  border-radius: 5px; /* Sudut gambar membulat */
+}
+
+/* --- Styling Tombol Aksi --- */
+.action-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #28a745; /* Warna hijau untuk Edit */
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Warna merah untuk Delete */
+  text-decoration: none;
+  color: #e0e0e0;
+padding: 10PX;
+}
+.add-btn {
+  background-color: #0775f4; /* Warna merah untuk Delete */
+  text-decoration: none;
+  color: #e0e0e0;
+padding: 10PX;
+}
+.detail-btn {
+  background-color: #33f286; /* Warna merah untuk Delete */
+  text-decoration: none;
+  color: #434343;
+padding: 10PX;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

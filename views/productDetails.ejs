@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/css/card.css">
+</head>
+<body>
+     <div class="product-cards-container">
+  
+    <div class="product-card">
+      <div class="product-image-wrapper">
+        <img src="<%= productDet.productImage %>" alt="<%= productDet.productName %>" class="product-image">
+      </div>
+      <div class="product-details">
+        <h3 class="product-name"><%= productDet.productName %></h3>
+        <p class="product-category">Category : <%= productDet.Category.categoryName %></p>
+        <p class="stock">Stock: <%= productDet.stock %></p>
+        <p class="price">Price: <%= productDet.price %></p>
+        <button class="view-details-btn">
+          <a href="/store/<%= productDet.id %>/buy">Buy Product</a>  
+        </button>
+        <button class="view-delete-btn">
+            <a href="/store" >Back</a>
+        </button>
+      </div>
+    </div>
+ 
+</div>
+</body>
+</html>

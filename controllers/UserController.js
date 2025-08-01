@@ -1,5 +1,6 @@
 const {
-    User
+    User,
+    Profile
 } = require('../models/index')
 const bcrypt = require('bcryptjs')
 class UserController {
@@ -17,9 +18,15 @@ class UserController {
     static async saveRegister(req, res) {
         try {
             // res.send("xSeller")
-            let { email, password, role } = req.body
+            let { firstName, lastName, bornDate, email, password, role } = req.body
 
-            await User.create({ email, password, role })
+            let user = await User.create({ email, password, role })
+            await Profile.create({
+                firstName,
+                lastName,
+                bornDate,
+                UserId: user.id
+            })
             res.redirect('/logIn');
         } catch (err) {
             console.log(err);
@@ -52,18 +59,43 @@ class UserController {
             if (user) {
                 const isValidPass = bcrypt.compareSync(password, user.password);
                 if (isValidPass) {
-                    return res.redirect('/logIn/landingPage')
+                    req.session.userId = user.id
+                    req.session.role = user.role
+
+                    if (user.role === 'seller') {
+                        res.redirect('/product')
+                    } else {
+                        res.redirect('/store')
+                    }
                 } else {
                     // throw "Wrong password"
                     let error = "Invalid email or password!"
-                    return res.redirect(`/logIn?error=${error}`)
+                    res.redirect(`/logIn?error=${error}`)
                 }
             } else {
                 const err = "User not found"
-                return res.redirect(`/logIn?error=${err}`)
+                res.redirect(`/logIn?error=${err}`)
             }
 
         } catch (err) {
+            console.log(err);
+            res.send(err)
+
+        }
+    }
+
+    static async logOut(req, res) {
+        try {
+            // res.send("x")
+            req.session.destroy((err) => {
+                if (err) {
+
+                    console.log(err);
+                    return res.send(err)
+                }
+                res.redirect('/logIn')
+            })
+        } catch (error) {
             console.log(err);
             res.send(err)
 

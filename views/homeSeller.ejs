@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller homepage</title>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+<body>
+    <p>SELLER HOMEPAGE</p>
+    <h1>Welcome back, <%= user.Profile.firstName %></h1>
+  
+   
+     <button class="add-btn">
+                        <a class="add-btn" href="/product/add"> ADD PRODUCT </a>
+                    </button>
+                    <br><br>
+
+      <div class="product-cards-container">
+  
+   <table border="6" class="product-table">
+    <tr>
+        <th>Product Image</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+    </tr>
+    <% product.forEach(el => { %>
+            <tr>
+               <td> <img src="<%=  el.productImage %>"  alt="<%= el.productName %>" class="product-image"></td>
+                <td><%= el. productName %></td>
+                <td><%= el. price %></td>
+                <td><%= el. stock %></td>
+                <td>
+                    <button class="add-btn">
+                        <a class="add-btn" href="/product/<%= el.id %>"> ADD STOCK </a>
+                    </button>
+                    <button class="delete-btn">
+                        <a class="delete-btn" href="/product/<%= el.id %>"> REDUCE STOCK </a>
+                    </button>
+                    <button class="detail-btn">
+                        <a class="detail-btn" href="/product/<%= el.id %>"> DETAIL PRODUCT </a>
+                    </button>
+                    <button class="delete-btn">
+                        <a class="delete-btn" href="/product/<%= el.id %>/delete"> DELETE PRODUCT </a>
+                    </button>
+                </td>
+                
+            </tr>
+    <% }) %>
+   </table>
+   <br><br>
+    <button class="delete-btn">
+        <a class="delete-btn"href="/logOut">Log Out</a>
+    </button>
+ 
+</body>
+</html>

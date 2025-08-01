@@ -4,50 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
 </head>
-<style>
-  form {
-    width: 100%; /* Mengatur lebar form */
-    max-width: 400px; /* Batasi lebar maksimum */
-    margin: 50px auto; /* Memberi margin atas/bawah 50px, dan menengahkan secara horizontal */
-    padding: 30px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Untuk menengahkan konten di dalam form */
-  }
 
-  /* Tambahan styling untuk elemen form agar lebih rapi */
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: left;
-  }
-
-  form input[type="text"],
-  form select {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-
-  form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  form button:hover {
-    background-color: #0056b3;
-  }
-</style>
 
 <body>
     <p> DAFTAR DULU LEKK </p>
@@ -56,6 +15,18 @@
         <hr>
 
     <form  action="/registers" method="post" >
+        <label for="firstName">First Name</label>
+           <br>
+       <input type="text" id="firstName" name="firstName">
+           <br>
+         <label for="lastName">Last Name</label>
+            <br>
+        <input type="text" id="lastName" name="lastName">
+            <br>
+         <label for="bornDate">Date of born:</label>
+            <br>
+        <input type="date" id="bornDate" name="bornDate">
+            <br>
          <label for="email">Email</label>
             <br>
         <input type="text" id="email" name="email">

@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> homepage after log in</title>
+    <link rel="stylesheet" href="/css/card.css">
+
 </head>
 <body>
-    
+    <p>WELCOME TO AH-OK STORE</p>
+    <div class="sub-heading">We provide any needs of your sports apparel, even provide you to run in 2:12</div>
+
+    <div class="product-cards-container">
+  <% stores.forEach(product => { %>
+    <div class="product-card">
+      <div class="product-image-wrapper">
+        <img src="<%= product.productImage %>" alt="<%= product.productName %>" class="product-image">
+      </div>
+      <div class="product-details">
+        <h3 class="product-name"><%= product.productName %></h3>
+        <p class="product-category">Category : <%= product.Category.categoryName %></p>
+        <p class="stock">Stock: <%= product.stock %></p>
+        <p class="price">Price: <%= product.price %></p>
+        <button class="view-details-btn">
+          <a href="/store/<%= product.id %>" >View Details</a>  
+        </button>
+      </div>
+    </div>
+  <% }) %>
+</div>
+<button>
+  <a href="/logout">Log Out</a>
+</button>
+
 </body>
 </html>
